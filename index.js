@@ -4,6 +4,9 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/WebContent/pages'));
+app.use(express.static(__dirname + '/WebContent/bower_components'));
+app.use(express.static(__dirname + '/WebContent/dist'));
+app.use(express.static(__dirname + '/WebContent/js'));
 
 
 app.get('/', function(request, response) {
