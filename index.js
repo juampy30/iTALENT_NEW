@@ -5,10 +5,6 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 
-
-app.get('/WebContent/pages', function(request, response) {
-  response.send('home.html');
-});
 app.get('/', function(request, response) {
   response.send('index.html');
 });

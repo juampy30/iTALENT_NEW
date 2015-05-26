@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>TCS - iTalent</title>
+
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!-- Bootstrap Core CSS -->
+<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+<link href="../bower_components/metisMenu/dist/metisMenu.min.css"
+	rel="stylesheet">
+<!-- Marketplace CSS -->
+<link href="css/marketplace.css" rel="stylesheet">
+<link href="css/profile.css" rel="stylesheet">
+<!-- Timeline CSS -->
+<link href="../dist/css/timeline.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+<!-- Card CSS -->
+<link href="../dist/css/card.css" rel="stylesheet">
+
+<!-- Morris Charts CSS -->
+<link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="../bower_components/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<!-- /#wrapper -->
+	<div id="wrapper">
+
+
+		<!-- Navigation ----------------------------------------------------------------------------->
+		<nav class="navbar navbar-default navbar-static-top" id="navBar">
+
+			<!-- /.navbar-header -->
+			<div class="navbar-header">
+
+				<!-- Navigation iTalent Logo -->
+				<a class="navbar-brand" href="index.html" id="iTalentLogo"><b>iTALENT</b></a>
+				<!-- Navigation iTalent Logo -->
+
+				<!-- Navigation Search Bar -->
+				<div class="col-lg-6" id="searchBar">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<strong><select class="form-control" id="searchDropdown">
+									<option value="associates">Associates</option>
+									<option value="jobs">Positions</option>
+									<option value="interests">Posts</option>
+							</select></strong>
+						</div>
+						<!-- /btn-group -->
+						<input type="text" class="form-control" id="searchInput">
+						<button class="btn btn-default" type="button"
+							onclick="window.location.href='search-associates.html'"
+							id="searchIconButton">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<!-- Navigation Search Bar -->
+			</div>
+			<!-- /.navbar-header -->
+
+
+			<!-- /.navbar-top-links -->
+			<ul class="nav navbar-top-links navbar-right"">
+
+				<li class="dropdown"><a class="dropdown-toggle"
+					href="home.html" id="myHover"> <i
+						class="glyphicon glyphicon-home" id="icons"></i>
+				</a></li>
+				<!-- /.dropdown HOME -->
+
+				<!-- /.dropdown MARKETPLACE -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					href="marketplace.html" id="myHover"> <i
+						class="glyphicon glyphicon-briefcase" id="icons"></i>
+				</a></li>
+				<!-- /.dropdown MARKETPLACE -->
+
+
+				<!-- /.dropdown-bookmarks -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#" id="myHover"> <i
+						class="glyphicon glyphicon-bookmark" id="icons"></i> <i
+						class="fa fa-caret-down" id="icons"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-messages">
+						<li><a href="#">
+								<div id="titleB">
+									<strong><i class="glyphicon glyphicon-briefcase"></i>
+										Oracle Developer</strong> <span class="pull-right text-muted"> <em>05/12/2015</em>
+									</span>
+								</div>
+
+								<table>
+									<tr>
+										<td>Dave Daron</td>
+										<span class="pull-right text-muted">Tampa, Florida 
+									</tr>
+								</table>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div id="titleB">
+									<strong><i class="glyphicon glyphicon-briefcase"></i>
+										Java Developer</strong> <span class="pull-right text-muted"> <em>05/12/2015</em>
+									</span>
+								</div>
+
+								<table>
+									<tr>
+										<td>Ryan Smith</td>
+										<span class="pull-right text-muted">Washington, DC 
+									</tr>
+								</table>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div id="titleO">
+									<strong><i class="glyphicon glyphicon-bullhorn"></i>
+										Robotic Jobs!</strong> <span class="pull-right text-muted"> <em>05/11/2015</em>
+									</span>
+								</div>
+
+								<table>
+									<tr>
+										<td>Ryan Smith</td>
+
+									</tr>
+								</table>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a class="text-center" data-toggle="modal"
+							data-target="#bookmarks" id="searchOptions"> <strong>View
+									All Bookmarks</strong> <i class="fa fa-angle-right"></i>
+						</a></li>
+
+					</ul></li>
+				<!-- /.dropdown-bookmarks -->
+
+
+
+				<!-- /.dropdown-Notifications -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#" style="color: #FFFFFF" id="myHover">
+						<i class="glyphicon glyphicon-flag" style="color: #FFFFFF"></i> <i
+						class="fa fa-caret-down" style="color: #FFFFFF"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-messages">
+						<li><a href="#">
+
+								<div id="">
+									<table>
+										<tr>
+											<td><img class="media-object" src="./images/user2.jpg"
+												id="imageNotifications"></td>
+											<td id="columnSpace">
+												<div>
+													<b> Dave Daron</b> is following you now.
+												</div>
+												<div>
+													<em>Project Manager</em>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+
+								<div id="">
+									<table>
+										<tr>
+											<td><img class="media-object" src="./images/user3.jpg"
+												id="imageNotifications"></td>
+											<td id="columnSpace">
+												<div>
+													<b> Ryan Smith</b> have endorsed you for <b> Java</b>.
+												</div>
+												<div>
+													<em>Software Developer</em>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+
+								<div id="">
+									<table>
+										<tr>
+											<td><img class="media-object" src="./images/user4.jpg"
+												id="imageNotifications"></td>
+											<td id="columnSpace">
+												<div>
+													<b> Sharon Doe</b> have left you a Testimonial.
+												</div>
+												<div>
+													<em>Project Manager</em>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div id="titleB">
+									<strong><i class="glyphicon glyphicon-briefcase"></i>
+										Oracle Developer</strong> <span class="pull-right text-muted"> <em>05/12/2015</em>
+									</span>
+								</div>
+
+								<table>
+									<tr>
+										<td>Dave Daron</td>
+										<span class="pull-right text-muted">Tampa, Florida 
+									</tr>
+								</table>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div id="titleO">
+									<strong><i class="glyphicon glyphicon-bullhorn"></i>
+										Robotic Jobs!</strong> <span class="pull-right text-muted"> <em>05/11/2015</em>
+									</span>
+								</div>
+
+								<table>
+									<tr>
+										<td>Ryan Smith</td>
+
+									</tr>
+								</table>
+
+						</a></li>
+						<li class="divider"></li>
+						<li><a class="text-center" data-toggle="modal"
+							data-target="#notificationsModal" id="searchOptions"> <strong>View
+									All Notifications</strong> <i class="fa fa-angle-right"></i>
+						</a></li>
+					</ul></li>
+				<!-- /.dropdown-messages -->
+
+				<!-- /.dropdown-user -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					href="profile.html" style="color: #FFFFFF" id="myHover"> <i
+						class="fa fa-user fa-fw" style="color: #FFFFFF"></i>
+				</a></li>
+				<!-- /.dropdown-user -->
+
+			</ul>
+			<!-- /.navbar-top-links -->
+
+
+		</nav>
+		<!-- Navigation ----------------------------------------------------------------------------->
+
+
+		<!-- /#page-wrapper -->
+		<div id="page-wrapper" style="margin: 0 0 0 0px; float: left;">
+			<!-- /.row -->
+			<br>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6" style="width: 100%">
+							<div class="card hovercard">
+								<div class="cardheader"></div>
+								<div class="avatar">
+									<img alt="" src="./images/user1B.jpg">
+								</div>
+								<div class="info">
+									<div class="title">
+										<a href="profile.html">Kevin Murphy</a>
+									</div>
+									<div class="desc">1027799</div>
+									<div class="desc">Software Engineer</div><br>
+									<span id="skills_O">Allocated</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+			<!-- /.row -->
+
+			<!-- /.row -->
+			<div class="row">
+
+				<!-- News Feed ---------------------------------------------------------------------------------->
+				<!-- /.col-lg-8 -->
+				<div class="col-lg-8">
+
+					<!-- /.panel -->
+					<div class="panel panel-default2">
+						<!-- /.panel-heading -->
+						<div class="panel-heading"
+							style="background-color: #1AB0AE; color: #FFFFFF; font-size: 18px">
+							<i class="fa fa-newspaper-o"></i> News Feed
+						</div>
+						<!-- /.panel-heading -->
+						<!-- /.panel-body -->
+						<div class="panel-body">
+
+
+
+							<!-- Timeline --------------------------------->
+							<ul class="timeline">
+								<li>
+									<div class="timeline-badge"
+										style="background-image: url(./images/user2.jpg); height: 85px; width: 85px; background-position: center;">
+										<i class=""></i>
+									</div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+
+											<div class="content">
+												<h4>
+													<b style="color: #F79646;">Oracle Developer </b>
+												</h4>
+											</div>
+
+											<p>
+												<b>Posted by: </b> Dave Daron <i class="fa fa-clock-o"
+													style="text-indent: 10px"></i> 5 min. ago
+											</p>
+
+											<p>
+												<b>Location: </b> Tampla, Florida
+											</p>
+											<p>
+												<b>Reference Number: </b>244329298904
+											</p>
+
+											<div class="col-lg-6">
+												<a data-toggle="modal" data-target="#myModalDetails"><i
+													class="glyphicon glyphicon-info-sign"></i> View More</a>
+											</div>
+											<div class="col-lg-6">
+												<a href="" style="color: #F79646;"><i
+													class="glyphicon glyphicon-bookmark"></i> Bookmark</a>
+											</div>
+
+
+
+										</div>
+								</li>
+								<li class="timeline-inverted">
+									<div class="timeline-badge warning"
+										style="background-image: url(./images/user2.jpg); height: 85px; width: 85px; background-position: center; margin-left: -6.5%">
+										<i class=""></i>
+									</div>
+									<div class="timeline-panel">
+
+										<div class="content">
+											<h4>
+												<b style="color: #1AB0AE;">Looking to do Web
+													Developement in Charlotte, North Carolina </b>
+											</h4>
+										</div>
+
+										<p>
+											<b>Posted by: </b> Dave Daron <i class="fa fa-clock-o"
+												style="text-indent: 10px"></i> 11 min. ago
+										</p>
+
+										<p>
+											<b>Description: </b> I have much more experience and would
+											like to find a position that uses C# and Visual Studio.
+										</p>
+
+										<table>
+											<tr>
+												<th>Tags:</th>
+												<td id="skillCells"><span id="skills_market_R">C#</span>
+													<span id="skills_market_R">ASP.Net</span> <span
+													id="skills_market_R">Visual Studio</span></td>
+											</tr>
+										</table>
+										<br>
+										<p>
+											<a href="profile-friend.html"><i
+												class="glyphicon glyphicon-info-sign"></i> Dave's Profile</a>
+										</p>
+
+
+									</div>
+								</li>
+								<li>
+									<div class="timeline-badge danger"
+										style="background-image: url(./images/user3.jpg); height: 85px; width: 85px; background-position: center;">
+										<i class=""></i>
+									</div>
+									<div class="timeline-panel">
+
+										<div class="content">
+											<h4>
+												<b style="color: #F79646;">Java Developer </b>
+											</h4>
+										</div>
+
+										<p>
+											<b>Posted by: </b> Ryan Smith <i class="fa fa-clock-o"
+												style="text-indent: 10px"></i> 12 min. ago
+										</p>
+
+										<p>
+											<b>Location: </b> Washington, DC
+										</p>
+										<p>
+											<b>Reference Number: </b>902329298904
+										</p>
+
+										<div class="col-lg-6">
+											<a data-toggle="modal" data-target="#myModalDetails"><i
+												class="glyphicon glyphicon-info-sign"></i> View More</a>
+										</div>
+										<div class="col-lg-6">
+											<a href="" style="color: #F79646;"><i
+												class="glyphicon glyphicon-bookmark"></i> Bookmark</a>
+										</div>
+
+
+
+									</div>
+								</li>
+								<li class="timeline-inverted">
+									<div class="timeline-badge warning"
+										style="background-image: url(./images/user3.jpg); height: 85px; width: 85px; background-position: center; margin-left: -6.5%">
+										<i class=""></i>
+									</div>
+									<div class="timeline-panel">
+
+										<div class="content">
+											<h4>
+												<b style="color: #1AB0AE;">Robotic Jobs! </b>
+											</h4>
+										</div>
+
+										<p>
+											<b>Posted by: </b> Ryan Smith <i class="fa fa-clock-o"
+												style="text-indent: 10px"></i> 18 min. ago
+										</p>
+
+										<p>
+											<b>Description: </b> Are there any robotics Jobs currently
+											available?
+										</p>
+
+										<table>
+											<tr>
+												<th>Tags:</th>
+												<td id="skillCells"><span id="skills_market_R">Robotics</span>
+													<span id="skills_market_R">ROS</span> <span
+													id="skills_market_R">IoT</span> <span id="skills_market_R">Embedded
+														Sys.</span></td>
+											</tr>
+										</table>
+										<br>
+										<p>
+											<a href="profile-friend.html">Ryan's Profile</a>
+										</p>
+
+									</div>
+								</li>
+
+								<li>
+									<div class="timeline-badge danger"
+										style="background-image: url(./images/user4.jpg); height: 85px; width: 85px; background-position: center;">
+										<i class=""></i>
+									</div>
+									<div class="timeline-panel">
+
+										<div class="content">
+											<h4>
+												<b style="color: #F79646;">Sr. IT Analyst </b>
+											</h4>
+										</div>
+
+										<p>
+											<b>Posted by: </b> Sahron Doe <i class="fa fa-clock-o"
+												style="text-indent: 10px"></i> 20 min. ago
+										</p>
+
+										<p>
+											<b>Location: </b> Charlotte, North Carolina
+										</p>
+										<p>
+											<b>Reference Number: </b>773329298904
+										</p>
+
+										<div class="col-lg-6">
+											<a data-toggle="modal" data-target="#myModalDetails"><i
+												class="glyphicon glyphicon-info-sign"></i> View More</a>
+										</div>
+										<div class="col-lg-6">
+											<a href="" style="color: #F79646;"><i
+												class="glyphicon glyphicon-bookmark"></i> Bookmark</a>
+										</div>
+
+
+
+									</div>
+								</li>
+
+
+								<li class="timeline-inverted">
+									<div class="timeline-badge warning"
+										style="background-image: url(./images/user4.jpg); height: 85px; width: 85px; background-position: center; margin-left: -6.5%">
+										<i class=""></i>
+									</div>
+									<div class="timeline-panel2">
+
+										<div class="content">
+											<h4>
+												<b style="color: #1AB0AE;">Help with Java </b>
+											</h4>
+										</div>
+
+										<p>
+											<b>Posted by: </b> Sharon Doe <i class="fa fa-clock-o"
+												style="text-indent: 10px"></i> 25 min. ago
+										</p>
+
+										<p>
+											<b>Description: </b> I learned C# and .NET in ILP. I would
+											like to learn how to do all of the same thing but in java.
+											Could someone point me in the right direction?
+										</p>
+
+										<table>
+											<tr>
+												<th>Tags:</th>
+												<td id="skillCells"><span id="skills_market_R">Java</span>
+													<span id="skills_market_R">Javascript</span> <span
+													id="skills_market_R">HTML</span></td>
+											</tr>
+										</table>
+										<br>
+										<p>
+											<a href="profile-friend.html">Sharon's Profile</a>
+										</p>
+
+									</div>
+								</li>
+							</ul>
+							<!-- Timeline --------------------------------->
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- Position Details Modal -->
+					<div class="modal fade" id="myModalDetails" tabindex="-1"
+						role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header" id="profileModalHeader">
+									<h4 class="modal-title" id="myModalLabel">Position Details</h4>
+								</div>
+								<div class="modal-body" id="profileModalBody">
+									<form role="form">
+										<ul class="media-list">
+
+											<li class="media">
+												<div class="media-left">
+													<a href="#"> <img class="media-object"
+														src="./images/user2B.jpg"
+														style="height: 128px; width: 128px">
+													</a>
+												</div>
+												<div class="media-body">
+													<h4 class="media-heading" style="color: #1AB0AE">
+														<b>Dave Daron</b>
+													</h4>
+													<p>
+														<i class="fa fa-clock-o"></i> 35 min. ago </small>
+													</p>
+
+
+													<table>
+														<tr>
+															<h5 style="color: #F79646">
+																<b>Position Details</b>
+															</h5>
+														<tr>
+															<th>Title:</th>
+															<td>Oracle Developer</td>
+														</tr>
+														<tr>
+															<th>Reference Number:</th>
+															<td>244329298904</td>
+														</tr>
+														<tr>
+															<th>Location:</th>
+															<td>Tampa, Florida</td>
+														</tr>
+														<tr>
+															<th>Description:</th>
+															<td>I need someone skilled in Oracle to optimize a
+																database.</td>
+														</tr>
+														<tr>
+															<th>Requiered Skills:</th>
+															<td id="skillCells"><span id="skills_market_R">SQL</span>
+																<span id="skills_market_R">Oracle</span> <span
+																id="skills_market_R">Databases</span></td>
+														</tr>
+														<tr>
+															<th>Desired Skills:</th>
+
+															<td id="skillCells"><span id="skills_market_D">Sys.Admin</span>
+																<span id="skills_market_D">Networking</span></td>
+														</tr>
+
+													</table>
+
+													<table>
+														<tr>
+															<h5 style="color: #F79646">
+																<b>Contact Information</b>
+															</h5>
+														<tr></tr>
+														<th>Email:</th>
+														<td>dave.daron@tcs.com</td>
+														</tr>
+														<tr>
+															<th>Phone:</th>
+															<td>(321)543-3131</td>
+														</tr>
+
+													</table>
+											</li>
+										</ul>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn"
+										style="background-color: #F79646; color: #FFFFFF"
+										data-dismiss="modal">Back</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Position Details Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+				<!-- /.col-lg-8 -->
+				<!-- News Feed ---------------------------------------------------------------------------------->
+
+
+
+				<!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+
+					<!-- /.panel ENDORSEMNET -->
+					<div class="panel panel-default2">
+						<!-- /.panel-heading -->
+						<div class="panel-heading"
+							style="background-color: #1AB0AE; color: #FFFFFF; font-size: 18px">
+							<i class="glyphicon glyphicon-thumbs-up"></i> Recent Endorsement
+						</div>
+						<!-- /.panel-heading -->
+
+						<!-- /.panel-body -->
+						<div class="panel-body">
+							<!-- /.list-group -->
+							<ul class="media-list">
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#"> <img class="media-object"
+											src="./images/user2B.jpg" style="height: 64px; width: 64px">
+										</a>
+									</div>
+									<div class="media-body">
+										<div class="media-heading">
+											<table style="width: 100%">
+												<tr>
+													<td><b>Dave Daron</b></td>
+													<td style="text-align: right; font-size: 13px"><i
+														class="fa fa-clock-o"></i> <em>35 min. ago</em></td>
+												</tr>
+											</table>
+											<div>
+												has endorsed you for <b>JAVA</b>
+											</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#"> <img class="media-object"
+											src="./images/user3B.jpg" style="height: 64px; width: 64px">
+										</a>
+									</div>
+									<div class="media-body">
+										<div class="media-heading">
+											<table style="width: 100%">
+												<tr>
+													<td><b>Ryan Smith</b></td>
+													<td style="text-align: right; font-size: 13px"><i
+														class="fa fa-clock-o"></i> <em>1 day ago</em></td>
+												</tr>
+											</table>
+											<div>
+												has endorsed you for <b>C++</b>
+											</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#"> <img class="media-object"
+											src="./images/user4B.jpg" style="height: 64px; width: 64px">
+										</a>
+									</div>
+									<div class="media-body">
+										<div class="media-heading">
+											<table style="width: 100%">
+												<tr>
+													<td><b>Sharon Doe</b></td>
+													<td style="text-align: right; font-size: 13px"><i
+														class="fa fa-clock-o"></i> <em>3 days ago</em></td>
+												</tr>
+											</table>
+											<div>
+												has endorsed you for <b>.NET</b>
+											</div>
+								</li>
+
+
+							</ul>
+							<!-- /.list-group -->
+							<a href="profile.html" class="btn btn-default btn-block">View
+								All Endorsement</a>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel ENDORSEMNET -->
+
+					<!-- /.panel TESTIMONIALS -->
+					<div class="panel panel-default2">
+						<!-- /.panel-heading -->
+						<div class="panel-heading"
+							style="background-color: #1AB0AE; color: #FFFFFF; font-size: 18px">
+							<i class="glyphicon glyphicon-comment"></i> Recent Testimonials
+						</div>
+						<!-- /.panel-heading -->
+
+						<!-- /.panel-body -->
+						<div class="panel-body">
+							<!-- /.list-group -->
+							<div class="list-group">
+								<ul class="media-list">
+
+
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"> <img class="media-object"
+												src="./images/user3B.jpg" style="height: 64px; width: 64px">
+											</a>
+										</div>
+										<div class="media-body">
+											<div class="media-heading">
+												<table style="width: 100%">
+													<tr>
+														<td><b>Ryan Smith</b></td>
+														<td style="text-align: right; font-size: 13px"><i
+															class="fa fa-clock-o"></i> <em>2 days ago</em></td>
+													</tr>
+												</table>
+												<div>Great skills with Java. Dedicated and energetic.
+													Good communication and collaboration.</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"> <img class="media-object"
+												src="./images/user4B.jpg" style="height: 64px; width: 64px">
+											</a>
+										</div>
+										<div class="media-body">
+											<div class="media-heading">
+												<table style="width: 100%">
+													<tr>
+														<td><b>Sharon Doe</b></td>
+														<td style="text-align: right; font-size: 13px"><i
+															class="fa fa-clock-o"></i> <em>5 days ago</em></td>
+													</tr>
+												</table>
+												<div>Kevin and I worked on the same project out of ILP
+													and he consistently proved his ability.</div>
+									</li>
+
+								</ul>
+							</div>
+							<!-- /.list-group -->
+							<a href="profile.html" class="btn btn-default btn-block">View
+								All Testimonials</a>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel TESTIMONIALS -->
+
+					<!-- /.panel FOLLOWING ASSICIATES -->
+					<div class="chat-panel panel panel-default2">
+						<!-- /.panel-heading -->
+						<div class="panel-heading"
+							style="background-color: #1AB0AE; color: #FFFFFF; font-size: 18px">
+							<i class="fa fa-users"></i> Following Associates
+						</div>
+						<!-- /.panel-heading -->
+
+						<!-- /.panel-body -->
+						<div class="panel-body" style="text-align: center">
+							<div class="row">
+								<div>
+									<h5 class="page-header"
+										style="margin-top: -5px; text-align: right;">Following
+										(3)</h5>
+								</div>
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb">
+
+									<div>
+										<a class="" href="profile-friend.html"> <img
+											class="img-responsive" src="./images/user2B.jpg">
+										</a>
+									</div>
+									<a class="" href="profile-friend.html"> <b>Dave Daron </b></a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb">
+
+									<div>
+										<a class="" href="profile-friend.html"> <img
+											class="img-responsive" src="./images/user3B.jpg">
+										</a>
+									</div>
+									<a class="" href="profile-friend.html"> <b>Ryan Smith </b></a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb">
+
+									<div>
+										<a class="" href="profile-friend.html"> <img
+											class="img-responsive" src="./images/user4B.jpg">
+										</a>
+									</div>
+									<a class="" href="profile-friend.html"> <b>Sharon Doe </b></a>
+								</div>
+							</div>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel FOLLOWING ASSICIATES -->
+
+					<!-- /.panel FOLLOWERS ASSICIATES -->
+					<div class="chat-panel panel panel-default2">
+						<!-- /.panel-heading -->
+						<div class="panel-heading"
+							style="background-color: #1AB0AE; color: #FFFFFF; font-size: 18px">
+							<i class="fa fa-users"></i> Followers Associates
+						</div>
+						<!-- /.panel-heading -->
+
+						<!-- /.panel-body -->
+						<div class="panel-body" style="text-align: center">
+							<div class="row">
+								<div>
+									<h5 class="page-header"
+										style="margin-top: -5px; text-align: right;">Followers
+										(3)</h5>
+								</div>
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb">
+
+									<div>
+										<a class="" href="profile-friend.html"> <img
+											class="img-responsive" src="./images/user2B.jpg">
+										</a>
+									</div>
+									<a class="" href="profile-friend.html"> <b>Dave Daron </b></a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb">
+
+									<div>
+										<a class="" href="profile-friend.html"> <img
+											class="img-responsive" src="./images/user3B.jpg">
+										</a>
+									</div>
+									<a class="" href="profile-friend.html"> <b>Ryan Smith </b></a>
+								</div>
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb">
+
+									<div>
+										<a class="" href="profile-friend.html"> <img
+											class="img-responsive" src="./images/user4B.jpg">
+										</a>
+									</div>
+									<a class="" href="profile-friend.html"> <b>Sharon Doe </b></a>
+								</div>
+							</div>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel FOLLOWING ASSICIATES -->
+
+
+				</div>
+				<!-- /.col-lg-4 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /#page-wrapper -->
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+	<!-- Morris Charts JavaScript -->
+	<script src="../bower_components/raphael/raphael-min.js"></script>
+	<script src="../bower_components/morrisjs/morris.min.js"></script>
+	<script src="../js/morris-data.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../dist/js/sb-admin-2.js"></script>
+</body>
+
+</html>
