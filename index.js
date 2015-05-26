@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/WebContent/pages'));
 
 
 app.get('/', function(request, response) {
-  response.send('home.html');
+  response.send('index.html');
 });
 
 app.listen(app.get('port'), function() {
